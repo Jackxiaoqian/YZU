@@ -1,0 +1,49 @@
+import math
+def move(x,y,step,angle=0):
+	nx=x+step*math.cos(angle)
+	ny=y-step*math.sin(angle)
+	return nx,ny
+#x=float(input())
+#y=float(input())
+#step=float(input())
+#angle=float(input())
+#x,y=move(x,y,step,angle)
+#print(x,y)
+
+def studebt(name,gender,age,city='suzhou'):
+	print('name:',name)
+	print('gender:',gender)
+	print('age:',age)
+	print('city:',city)
+
+def digui(n):
+	if n==1:
+		return 1
+	return n*digui(n-1)
+
+def weigui(num,product):
+	if num==1:
+		return product
+	return weigui(num-1,num*product)
+
+#L=[]
+#n=1
+#while n<20:
+ 	#L.append(n)
+ 	#n=n+2
+#print(L)
+def qushu(number):
+	friends=['wangyuchen','zhangxinyi','zhuzijie','atangge','yanyan','chenhu']
+	if number>5:
+		print("you do not have so many frineds")
+	else:
+		i=0
+		L=[]
+		while i<number:
+			L.append(friends[i])
+			i=i+1
+		print(L)
+
+def area_of_circle(r):
+	s=r*r*3.1415
+	print(s)
